@@ -19,6 +19,35 @@ forma:
 
 */
 
+//declarar variables
+    let donación;
+    let Pediatría;
+    let Medicina;
+    let Ginecología;
+    let Traumatología;
+
+
+    //ingreso datos
+    donación = prompt("ingresa la cantidad de donación recibida");
+
+
+    //procesamiento
+
+    donación = parseInt(donación);
+    Medicina = donación*0.45;
+    Ginecología = donación*0.3;
+    Pediatría = (Medicina + Ginecología)*0.2;
+    Traumatología = donación - Medicina - Ginecología - Pediatría;
+
+
+    //salida datos
+    document.write("el área de Pedriatría recibe: " + Pediatría);
+    document.write("<br>");
+    document.write("el área de Ginecología recibe: " + Ginecología);
+    document.write("<br>");
+    document.write("el área de Medicina General recibe: " + Medicina);
+    document.write("<br>");
+    document.write("el área de Traumatología recibe: " + Traumatología);
 
 
 

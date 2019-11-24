@@ -10,6 +10,7 @@
 
     //declarar variables
     let num3;
+    let par;
 
 
     //ingreso datos
@@ -18,12 +19,15 @@
     //procesamiento
 
     num3 = parseInt(num3);
-    
-    <if  num3> = velocidad*tiempo;
-    
+    par = num3%2
+    if (par == 0) {
+        document.write("El número ingresado es par")
+    }  
+    else  {document.write("El número ingresado no es par")
+    }
 
     //salida datos
-    document.write("la distancia recorrida por el móvil es: " + distancia + " m");
+   
 
 
 

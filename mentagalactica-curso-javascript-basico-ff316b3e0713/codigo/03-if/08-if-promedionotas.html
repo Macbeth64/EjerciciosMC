@@ -3,18 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Promedio Notas</title>
-
-    /*
-El promedio final de un curso se obtiene en base al promedio simple de tres prácticas
-calificadas. Para ayudar a los alumnos, el profesor del curso ha prometido incrementar
-en dos puntos la nota de la tercera práctica calificada, si es que esta es no menor que
-10. Diseñe un programa que determine el promedio final de un alumno conociendo sus
-tres notas. Considere que la nota máxima es 20.
-Imprima el promedio.
-    */
+    
 
 <script>
-
+    //El promedio final de un curso se obtiene en base al promedio simple de tres prácticas calificadas. Para ayudar a los alumnos, el profesor del curso ha prometido incrementar en dos puntos la nota de la tercera práctica calificada, si es que esta es no menor que 10. Diseñe un programa que determine el promedio final de un alumno conociendo sus tres notas. Considere que la nota máxima es 20. Imprima el promedio.
     //declarar las variables
 
     let pract1;
@@ -32,15 +24,17 @@ Imprima el promedio.
 
 
       //procesamiento de datos
-if (pract2>9){
-    pro}
-
+if (pract2<10){
      promedio = (pract1+pract2+pract3)/3;
-       //formular del promedio = sumaelementos/cantidadElementos
+    } 
+if (pract2>9){
+    promedio = (pract1+pract2+2+pract3)/3;
+}    
+      //formular del promedio = sumaelementos/cantidadElementos
 
 
     //impresion de datos
-
+    document.write("El promedio final del alumno es:"+ promedio);
 
 
 </script>

@@ -7,8 +7,23 @@
     /*
     si ingreso un numero decirme si es par o impar.
     */
+    let num3;
+    let par;
 
 
+    //ingreso datos
+    num3 = prompt("ingresa el número");
+
+    //procesamiento
+
+    num3 = parseInt(num3);
+    par = num3%2
+    if (par == 0) {
+        document.write("El número ingresado es par")
+    }  
+    else {
+        document.write("El número ingresado no es par")
+    }
 
     </script>
 

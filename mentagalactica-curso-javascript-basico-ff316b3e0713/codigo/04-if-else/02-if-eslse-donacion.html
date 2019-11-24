@@ -20,14 +20,33 @@ La institución desea saber cuanto de dinero destinará a cada rubro anualmente.
 */
 
     //declarar variables
-
+    let donacion;
+    let csalud;
+    let cniños;
+    let bolsa;
 
     //ingreso datos
-
+    donacion = prompt("Ingresa la donación");
 
 
     //procesamiento
 
+if (donacion<10000){
+    csalud=donacion*0.3;
+    cniños=donacion*0.5;
+    bolsa=donacion*0.2;
+}
+else {
+    csalud=donacion*0.25;
+    cniños=donacion*0.6;
+    bolsa=donacion*0.15;
+}
+
+document.write("Se destinará al Centro de Salud: "+csalud);
+document.write("<br>");
+document.write("Se destinará al Comedor de niños: "+cniños);
+document.write("<br>");
+document.write("Se destinará para invertir en la bolsa: "+bolsa);
 
 </script>
 

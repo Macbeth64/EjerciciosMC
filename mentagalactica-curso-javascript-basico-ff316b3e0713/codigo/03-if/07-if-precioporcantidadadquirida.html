@@ -23,7 +23,44 @@ Descuento:
 Total a pagar:
 
     */
+    //declarar variables
+    let und;
+    let punit;
+    let dscto;
+    let total;
+    //ingreso datos
+    und = prompt("Ingresa la cantidad de unidades por adquirir");
+    
+    und = parseInt(und);
+    punit = parseInt(punit);
+    dscto = parseInt(dscto);
+    
+    if (und<26){
+        punit = 27.7;
+        dscto=0.05
+    }
+    else if (und<51){
+        punit=25.5;
+        dscto= 0.05;
+    }
+    else if (und<76){
+        punit=23.5;
+        dscto= 0.15;
+    }
+    else {
+        punit=21.5;
+        dscto= 0.15;
+        }
+                   
+    
+    total = (und*punit)*(1-dscto);
 
+    document.write("El precio unitario es:"+ punit);
+    document.write("<br>");
+    document.write("El descuento es:"+ dscto);
+    document.write("<br>");
+    document.write("El total a pagar es:"+ total);
+    
     </script>
 
 </head>

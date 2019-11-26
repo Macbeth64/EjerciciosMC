@@ -16,21 +16,36 @@ Diseñe un programa que determine cuanto debe pagar un cliente por las horas del
 */
 
 //declaración variables
-
-
+let dia;
+let tarifa;
+let horas;
+let total;
 
 //ingreso de datos
-
-
-
-
-
+dia = prompt("Ingresa el día");
+horas = prompt("Ingresa la cantidad de horas");
+horas = parseInt(horas);
+tarifa = 0;
+tarifa = parseInt(tarifa);
 //procesamiento
-
-
-
+if (dia=="Lunes"||dia=="Martes"||dia=="Miercoles"||dia=="Jueves"){
+tarifa = 3.5;
+}
+else if (dia =="Viernes"||dia =="Sábado"){
+tarifa = 4.5;   
+}
+else if (dia =="Domingo"){
+tarifa = 2.5; 
+}
 
 //impresion
+else if (tarifa == 0){
+    alert ("Los valores ingresados no son correctos")
+}
+
+total=tarifa*horas;
+
+document.write("El total a pagar es : "+total);
 
 
 </script>

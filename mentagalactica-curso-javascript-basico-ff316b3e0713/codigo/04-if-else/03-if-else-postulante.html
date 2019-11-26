@@ -25,28 +25,25 @@ sexo = prompt("Ingresa el sexo del postulante: Femenino o Masculino");
 edad = prompt("Ingresa la edad del postulante");
 edad = parseInt(edad);
 
-if (sexo="Femenino"){
-    if (edad<23){
-        categoría="FA";      
+        if (sexo=="Femenino" && edad<23){
+            categoría="FA";
+            document.write("La categoría del postulante es: "+categoría);      
         }
-        else{
-        categoría="FB";
+        else if (sexo=="Femenino" && edad>22){
+            categoría="FB";
+            document.write("La categoría del postulante es: "+categoría);
         }
-    document.write("La categoría del postulante es: "+categoría);
-}
-
-else if (sexo="Masculino"){
-    if (edad < 25){ 
-        categoría="MA";
+        else if (sexo=="Masculino" && edad< 25){ 
+            categoría="MA";
+            document.write("La categoría del postulante es: "+categoría);
+        }
+        else if (sexo=="Masculino" && edad>24){
+            categoría="MB";    
+            document.write("La categoría del postulante es: "+categoría);
         }
         else {
-        categoría="MB";    
+        alert("Debes ingresar correctamente la información solicitada");
         }
-        document.write("La categoría del postulante es: "+categoría);
-}
-else {document.write("Registrar correctamente el sexo: Femenino o Masculino")
-}
-
 
 </script>
 

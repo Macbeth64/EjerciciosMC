@@ -19,11 +19,29 @@ Promedio        Categoría
 
 
 */
+let prom;
+let cat;
 
+prom = prompt ("Ingrese el promedio del estudiante");
 
+prom = parseInt (prom);
 
-
-
+if (prom <12){
+    cat="D";
+}
+else if (prom>11 && prom<14){
+    cat="C";
+}
+else if (prom>13 && prom<17){
+    cat="B";
+}
+else if (prom>16&& prom<21){
+    cat="A";
+}
+else{
+    alert("Error al ingresar el promedio")
+}
+document.write("La categoría del estudiante es: "+cat);
     </script>
 
 </head>

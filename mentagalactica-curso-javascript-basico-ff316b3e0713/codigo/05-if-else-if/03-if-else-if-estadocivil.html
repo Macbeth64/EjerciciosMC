@@ -13,8 +13,31 @@ civil. Considere: 1 para soltero, 2 para casado, 3 para viudo y 4 para divorciad
 el número no está en el intervalo de 1 a 4, imprima un mensaje de error.
 
 */
+let num;
+let ec;
 
+num = prompt("Número a ingresar");
+num = parseInt (num);
 
+if (num ==1){
+    ec="soltero";
+    document.write ("El estado civil es: "+ec);
+}
+else if (num==2){
+    ec= "casado";
+    document.write ("El estado civil es: "+ec);
+}   
+else if (num==3){
+    ec="viudo";
+    document.write ("El estado civil es: "+ec);
+}
+else if (num==4){
+    ec="divorciado";
+    document.write ("El estado civil es: "+ec);
+}
+else{
+    alert ("Ingresar número del 1 al 4")
+}
 </script>
 
 </head>
